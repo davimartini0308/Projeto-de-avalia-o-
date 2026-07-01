@@ -9,10 +9,10 @@ body {
 
 /* Cabeçalho com Degradê Azul */
 header {
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    background: linear-gradient (135 deg, #1e3a8a, #3b82f6);
     color: white;
-    padding: 25px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 25 px;
+    box-shadow: 0 4 px 6 px rgba (0,0,0,0.1);
 }
 
 /* Centralizando os Títulos */
@@ -22,48 +22,48 @@ h1, h2 {
 
 h1 {
     margin: 0;
-    font-size: 2.2em;
-    letter-spacing: 1px;
+    font-size: 2.2 em;
+    letter-spacing: 1 px;
 }
 
 h2 {
     color: #1e3a8a; /* Títulos em Azul Escuro */
-    margin-bottom: 20px;
+    margin-bottom: 20 px;
 }
 
 /* Container de Conteúdo */
 main {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
+    max-width: 800 px;
+    margin: 30 px auto;
+    padding: 0 20 px;
 }
 
 /* Seções Estilizadas como Cards Brancos */
 section {
     background-color: white;
-    border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-top: 5px solid #3b82f6; /* Detalhe azul na borda superior */
+    border-radius: 12 px;
+    padding: 30 px;
+    margin-bottom: 25 px;
+    box-shadow: 0 4 px 12 px rgba (0, 0, 0, 0.05);
+    border-top: 5 px solid #3b82f6; /* Detalhe azul na borda superior */
 }
 
 /* Borda Verde Esmeralda Exclusiva para a Área do Quiz */
 #quiz {
-    border-top: 5px solid #10b981;
+    border-top: 5 px solid #10b981;
 }
 
 p {
     line-height: 1.6;
-    font-size: 1.1em;
+    font-size: 1.1 em;
 }
 
 /* Formulário do Quiz */
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 15 px;
+    margin-top: 20 px;
 }
 
 label {
@@ -72,13 +72,13 @@ label {
 }
 
 select {
-    padding: 12px;
-    border: 2px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 1em;
+    padding: 12 px;
+    border: 2 px solid #cbd5e1;
+    border-radius: 8 px;
+    font-size: 1 em;
     background-color: #f8fafc;
     outline: none;
-    transition: border-color 0.3s;
+    transition: border-color 0.3 s;
 }
 
 select:focus {
@@ -90,12 +90,12 @@ button {
     background-color: #10b981; 
     color: white;
     border: none;
-    padding: 14px;
-    font-size: 1.1em;
+    padding: 14 px;
+    font-size: 1.1 em;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 8 px;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
+    transition: background-color 0.2 s, transform 0.1 s;
 }
 
 button:hover {
@@ -103,17 +103,17 @@ button:hover {
 }
 
 button:active {
-    transform: scale(0.98);
+    transform: scale (0.98);
 }
 
 /* Caixa de Resposta Dinâmica */
 #resultado-quiz {
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 8px;
+    margin-top: 20 px;
+    padding: 15 px;
+    border-radius: 8 px;
     text-align: center;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.1 em;
 }
 
 /* Rodapé */
@@ -121,7 +121,7 @@ footer {
     background-color: #1e293b; /* Cinza escuro azulado */
     color: #94a3b8;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 0.9em;
+    padding: 20 px;
+    margin-top: 50 px;
+    font-size: 0.9 em;
 }
