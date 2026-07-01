@@ -1,32 +1,28 @@
-// 1. Validador do Quiz
+// Validador do Quiz Revisitado e Sem Erros no Console
 const formQuiz = document.getElementById('form-quiz');
 const resultadoQuiz = document.getElementById('resultado-quiz');
 
 if (formQuiz && resultadoQuiz) {
     formQuiz.addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede a página de recarregar o navegador
+        event.preventDefault(); // Evita o recarregamento automático da página
         
         const resposta = document.getElementById('pergunta1').value;
         
-        // CORREÇÃO: Agora checa o valor exato que veio do HTML ("correta")
         if (resposta === "correta") {
             resultadoQuiz.textContent = "🎉 Correto! Hoje em dia as IAs são altamente realistas, precisamos sempre checar os fatos em fontes confiáveis!";
-            resultadoQuiz.style.color = "#00ff00"; // Verde para acerto
+            resultadoQuiz.style.backgroundColor = "#d1fae5"; // Fundo verde claro de sucesso
+            resultadoQuiz.style.color = "#065f46"; // Texto verde escuro
+            resultadoQuiz.style.border = "1px solid #10b981";
         } else if (resposta === "errada") {
             resultadoQuiz.textContent = "❌ Incorreto. As ferramentas evoluíram muito e detalhes visuais nem sempre são perceptíveis. Busque sempre agências de checagem!";
-            resultadoQuiz.style.color = "#ff3333"; // Vermelho para erro
+            resultadoQuiz.style.backgroundColor = "#fee2e2"; // Fundo vermelho claro de erro
+            resultadoQuiz.style.color = "#991b1b"; // Texto vermelho escuro
+            resultadoQuiz.style.border = "1px solid #ef4444";
         } else {
             resultadoQuiz.textContent = "⚠️ Por favor, selecione uma das opções antes de enviar.";
-            resultadoQuiz.style.color = "#ffcc00"; // Amarelo para aviso
+            resultadoQuiz.style.backgroundColor = "#fef3c7"; // Alerta amarelo
+            resultadoQuiz.style.color = "#92400e";
+            resultadoQuiz.style.border = "1px solid #f59e0b";
         }
-    });
-}
-
-// 2. Botão de Acessibilidade (Modo Escuro/Claro)
-const btnTema = document.getElementById('btn-tema');
-
-if (btnTema) {
-    btnTema.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
     });
 }
