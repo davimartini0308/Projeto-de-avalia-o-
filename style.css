@@ -1,14 +1,127 @@
-/* Cores padrão do site (Modo Claro) */
+/* Configurações Gerais com mais Cores */
 body {
-    background-color: #ffffff;
-    color: #1a1a1a;
-    transition: background-color 0.3 s ease, color 0.3 s ease;
-    font-family: sans-serif;
-    padding: 20 px;
+    background-color: #f0f4f8; /* Fundo azul claro moderno */
+    color: #2d3748; /* Texto cinza escuro para excelente contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Quando o JavaScript ativa o Modo Escuro */
-body.dark-mode {
-    background-color: #121214;
-    color: #e1e1e6;
+/* Cabeçalho com Degradê Azul */
+header {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Centralizando os Títulos */
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #1e3a8a; /* Títulos em Azul Escuro */
+    margin-bottom: 20px;
+}
+
+/* Container de Conteúdo */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Seções Estilizadas como Cards Brancos */
+section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #3b82f6; /* Detalhe azul na borda superior */
+}
+
+/* Borda Verde Esmeralda Exclusiva para a Área do Quiz */
+#quiz {
+    border-top: 5px solid #10b981;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Formulário do Quiz */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+select {
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f8fafc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #3b82f6;
+}
+
+/* Botão de Enviar em Verde Vibrante */
+button {
+    background-color: #10b981; 
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #059669; /* Verde mais escuro ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Caixa de Resposta Dinâmica */
+#resultado-quiz {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e293b; /* Cinza escuro azulado */
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
 }
