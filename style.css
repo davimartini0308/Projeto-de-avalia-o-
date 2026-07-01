@@ -1,19 +1,14 @@
-/* Estilos normais do site (Modo Claro padrão) */
+/* Cores padrão do site (Modo Claro) */
 body {
     background-color: #ffffff;
     color: #1a1a1a;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    transition: background-color 0.3 s ease, color 0.3 s ease;
+    font-family: sans-serif;
+    padding: 20 px;
 }
 
-/* Classe que o JavaScript ativa/desativa no Body */
+/* Quando o JavaScript ativa o Modo Escuro */
 body.dark-mode {
     background-color: #121214;
     color: #e1e1e6;
-}
-
-/* Ajuste opcional para os cartões/seções no modo escuro */
-body.dark-mode .quiz-box, 
-body.dark-mode .section-content {
-    background-color: #1d1d21;
-    border-color: #29292e;
 }
