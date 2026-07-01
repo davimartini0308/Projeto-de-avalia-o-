@@ -4,83 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cidadania Digital: O Impacto das Deepfakes e Desinformação</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header-container">
+    <header>
         <div class="logo">
-            <h1>Consciência<span>Digital</span></h1>
+            <h1>Consciência Digital</h1>
         </div>
-        <nav class="nav-menu">
-            <a href="#sobre">O que são Deepfakes</a>
-            <a href="#combate">Como Identificar</a>
-            <a href="#quiz">Teste seus Conhecimentos</a>
-        </nav>
-        <button id="btn-tema" class="btn-toggle">🌓 Alternar Modo</button>
+        <button id="btn-tema">🌓 Alternar Modo Escuro</button>
     </header>
 
     <main>
-
-        <section id="sobre" class="section-content">
+        <section id="sobre">
             <h2>O Impacto das Deepfakes na Sociedade</h2>
-            <div class="grid-container">
-                <div class="text-block">
-                    <p>
-                        As <strong>deepfakes</strong> são mídias digitais (vídeos, imagens ou áudios) manipuladas de forma profunda por Inteligência Artificial. Utilizando algoritmos de aprendizado de máquina, criadores conseguem simular o rosto e a voz de pessoas reais, fazendo-as dizer ou fazer coisas que nunca aconteceram.
-                    </p>
-                    <p>
-                        Na era da informação rápida, o uso malicioso dessa tecnologia intensifica a <strong>desinformação automatizada</strong>, minando a confiança nas instituições, distorcendo debates políticos e afetando a reputação de cidadãos comuns.
-                    </p>
-                </div>
-            </div>
+            <p>
+                As <strong>deepfakes</strong> são mídias digitais manipuladas de forma profunda por Inteligência Artificial. Utilizando algoritmos de aprendizado de máquina, criadores conseguem simular o rosto e a voz de pessoas reais.
+            </p>
         </section>
 
-        <hr> <section id="combate" class="section-content">
-            <h2>Como Detectar Mídias Manipuladas por IA?</h2>
-            <p>Embora a tecnologia esteja avançando, muitas deepfakes ainda deixam rastros. Fique atento a:</p>
-            <ul class="dicas-lista">
-                <li><strong>Piscadas não naturais:</strong> Muitas ferramentas de IA falham em simular o ritmo biológico do piscar de olhos.</li>
-                <li><strong>Inconsistências de iluminação:</strong> Sombras desalinhadas no rosto ou reflexos estranhos nos olhos.</li>
-                <li><strong>Erros de áudio:</strong> Desfocagem entre o movimento dos lábios e o som emitido.</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="quiz" class="section-content">
+        <section id="quiz">
             <h2>Desafio de Cidadania: É Real ou IA?</h2>
             <p>Teste suas habilidades de detecção respondendo ao quiz abaixo.</p>
             
-            <form id="form-quiz" class="quiz-box">
-                
-                <div class="quiz-item">
-                    <label for="pergunta1" class="quiz-label">
-                        1. Se um vídeo parece altamente realista, mas a voz do falante apresenta pequenos cortes metálicos e robóticos, o que você deve fazer?
-                    </label>
-                    <select id="pergunta1" class="quiz-input" required>
-                        <option value="">-- Selecione uma resposta --</option>
-                        <option value="errada">Compartilhar imediatamente, pois o visual prova que é real.</option>
-                        <option value="correta">Desconfiar e buscar a mesma notícia em agências de checagem confiáveis.</option>
-                        <option value="errada">Ignorar, pois áudios ruins acontecem em qualquer gravação de celular.</option>
-                    </select>
-                </div>
-
-                <button type="submit" id="btn-enviar" class="btn-primary">Verificar Resultado</button>
+            <form id="form-quiz">
+                <label for="pergunta1">
+                    1. Se um vídeo parece altamente realista, mas a voz apresenta pequenos cortes metálicos, o que você deve fazer?
+                </label>
+                <br><br>
+                <select id="pergunta1" required>
+                    <option value="">-- Selecione uma resposta --</option>
+                    <option value="errada">Compartilhar imediatamente, pois o visual prova que é real.</option>
+                    <option value="correta">Desconfiar e buscar a mesma notícia em agências de checagem.</option>
+                    <option value="errada">Ignorar, pois áudios ruins acontecem em qualquer celular.</option>
+                </select>
+                <br><br>
+                <button type="submit" id="btn-enviar">Verificar Resultado</button>
             </form>
 
-            <div id="resultado-quiz" class="resultado-container"></div>
+            <div id="resultado-quiz" style="margin-top: 20px; font-weight: bold; font-size: 1.2em;"></div>
         </section>
-
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 - Portal Cidadania Digital e IA. Desenvolvido para o Plano de Recuperação Disciplinar.</p>
-            <p class="creditos">Textos 100% autorais. Código estruturado sob as diretrizes do projeto #cidadaniadigital2026.</p>
-        </div>
+        <p>&copy; 2026 - Portal Cidadania Digital. #cidadaniadigital2026</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
