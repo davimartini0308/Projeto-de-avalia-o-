@@ -12,37 +12,37 @@
         <div class="logo">
             <h1>Consciência Digital</h1>
         </div>
-        <button id="btn-tema">🌓 Alternar Modo Escuro</button>
     </header>
 
     <main>
         <section id="sobre">
             <h2>O Impacto das Deepfakes na Sociedade</h2>
             <p>
-                As <strong>deepfakes</strong> são mídias digitais manipuladas de forma profunda por Inteligência Artificial. Utilizando algoritmos de aprendizado de máquina, criadores conseguem simular o rosto e a voz de pessoas reais.
+                As <strong>deepfakes</strong> são mídias digitais manipuladas de forma profunda por Inteligência Artificial. Utilizando algoritmos de aprendizado de máquina, criadores conseguem simular o rosto e a voz de pessoas reais, fazendo-as dizer ou fazer coisas que nunca aconteceram.
+            </p>
+            <p>
+                Na era da informação rápida, o uso malicioso dessa tecnologia intensifica a <strong>desinformação automatizada</strong>, minando a confiança nas instituições e afetando a reputação de cidadãos comuns.
             </p>
         </section>
 
         <section id="quiz">
             <h2>Desafio de Cidadania: É Real ou IA?</h2>
-            <p>Teste suas habilidades de detecção respondendo ao quiz abaixo.</p>
+            <p style="text-align: center; color: #555;">Teste suas habilidades de detecção respondendo ao quiz abaixo.</p>
             
             <form id="form-quiz">
                 <label for="pergunta1">
                     1. Se um vídeo parece altamente realista, mas a voz apresenta pequenos cortes metálicos, o que você deve fazer?
                 </label>
-                <br><br>
                 <select id="pergunta1" required>
                     <option value="">-- Selecione uma resposta --</option>
                     <option value="errada">Compartilhar imediatamente, pois o visual prova que é real.</option>
                     <option value="correta">Desconfiar e buscar a mesma notícia em agências de checagem.</option>
                     <option value="errada">Ignorar, pois áudios ruins acontecem em qualquer celular.</option>
                 </select>
-                <br><br>
                 <button type="submit" id="btn-enviar">Verificar Resultado</button>
             </form>
 
-            <div id="resultado-quiz" style="margin-top: 20px; font-weight: bold; font-size: 1.2em;"></div>
+            <div id="resultado-quiz"></div>
         </section>
     </main>
 
