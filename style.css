@@ -1,6 +1,19 @@
-@media (max-width: 768px) {
-    main {
-        padding: 10px;
-    }
-    /* Ajuste fontes e larguras aqui */
+/* Estilos normais do site (Modo Claro padrão) */
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+/* Classe que o JavaScript ativa/desativa no Body */
+body.dark-mode {
+    background-color: #121214;
+    color: #e1e1e6;
+}
+
+/* Ajuste opcional para os cartões/seções no modo escuro */
+body.dark-mode .quiz-box, 
+body.dark-mode .section-content {
+    background-color: #1d1d21;
+    border-color: #29292e;
 }
