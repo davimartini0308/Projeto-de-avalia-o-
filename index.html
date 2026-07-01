@@ -3,38 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consciência Digital: Deepfakes e Desinformação</title>
+    <title>Cidadania Digital: O Impacto das Deepfakes e Desinformação</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Cidadania Digital & IA</h1>
-        <button id="btn-tema">Alternar Modo Escuro</button>
+
+    <header class="header-container">
+        <div class="logo">
+            <h1>Consciência<span>Digital</span></h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="#sobre">O que são Deepfakes</a>
+            <a href="#combate">Como Identificar</a>
+            <a href="#quiz">Teste seus Conhecimentos</a>
+        </nav>
+        <button id="btn-tema" class="btn-toggle">🌓 Alternar Modo</button>
     </header>
 
     <main>
-        <section id="sobre">
-            <h2>O que são Deepfakes?</h2>
-            <p>Texto autoral explicando o conceito...</p>
+
+        <section id="sobre" class="section-content">
+            <h2>O Impacto das Deepfakes na Sociedade</h2>
+            <div class="grid-container">
+                <div class="text-block">
+                    <p>
+                        As <strong>deepfakes</strong> são mídias digitais (vídeos, imagens ou áudios) manipuladas de forma profunda por Inteligência Artificial. Utilizando algoritmos de aprendizado de máquina, criadores conseguem simular o rosto e a voz de pessoas reais, fazendo-as dizer ou fazer coisas que nunca aconteceram.
+                    </p>
+                    <p>
+                        Na era da informação rápida, o uso malicioso dessa tecnologia intensifica a <strong>desinformação automatizada</strong>, minando a confiança nas instituições, distorcendo debates políticos e afetando a reputação de cidadãos comuns.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="quiz">
-            <h2>Desafio: É Real ou Fake?</h2>
-            <form id="form-quiz">
-                <label for="pergunta1">Imagens geradas por IA sempre possuem falhas nas mãos ou reflexos?</label>
-                <select id="pergunta1" required>
-                    <option value="">Escolha uma opção</option>
-                    <option value="sim">Sim, a maioria</option>
-                    <option value="nao">Não, elas estão cada vez mais perfeitas</option>
-                </select>
-                <button type="submit">Verificar Resposta</button>
-            </form>
-            <div id="resultado-quiz"></div>
+        <hr> <section id="combate" class="section-content">
+            <h2>Como Detectar Mídias Manipuladas por IA?</h2>
+            <p>Embora a tecnologia esteja avançando, muitas deepfakes ainda deixam rastros. Fique atento a:</p>
+            <ul class="dicas-lista">
+                <li><strong>Piscadas não naturais:</strong> Muitas ferramentas de IA falham em simular o ritmo biológico do piscar de olhos.</li>
+                <li><strong>Inconsistências de iluminação:</strong> Sombras desalinhadas no rosto ou reflexos estranhos nos olhos.</li>
+                <li><strong>Erros de áudio:</strong> Desfocagem entre o movimento dos lábios e o som emitido.</li>
+            </ul>
         </section>
+
+        <hr>
+
+        <section id="quiz" class="section-content">
+            <h2>Desafio de Cidadania: É Real ou IA?</h2>
+            <p>Teste suas habilidades de detecção respondendo ao quiz abaixo.</p>
+            
+            <form id="form-quiz" class="quiz-box">
+                
+                <div class="quiz-item">
+                    <label for="pergunta1" class="quiz-label">
+                        1. Se um vídeo parece altamente realista, mas a voz do falante apresenta pequenos cortes metálicos e robóticos, o que você deve fazer?
+                    </label>
+                    <select id="pergunta1" class="quiz-input" required>
+                        <option value="">-- Selecione uma resposta --</option>
+                        <option value="errada">Compartilhar imediatamente, pois o visual prova que é real.</option>
+                        <option value="correta">Desconfiar e buscar a mesma notícia em agências de checagem confiáveis.</option>
+                        <option value="errada">Ignorar, pois áudios ruins acontecem em qualquer gravação de celular.</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-enviar" class="btn-primary">Verificar Resultado</button>
+            </form>
+
+            <div id="resultado-quiz" class="resultado-container"></div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 - Desenvolvido por [Davi Bruno]. Fontes de mídia: [Créditos]</p>
+        <div class="footer-content">
+            <p>&copy; 2026 - Portal Cidadania Digital e IA. Desenvolvido para o Plano de Recuperação Disciplinar.</p>
+            <p class="creditos">Textos 100% autorais. Código estruturado sob as diretrizes do projeto #cidadaniadigital2026.</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
